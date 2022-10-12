@@ -59,6 +59,7 @@ namespace projectADO.NET
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -236,21 +237,23 @@ namespace projectADO.NET
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(409, 369);
+            this.button1.Location = new System.Drawing.Point(376, 369);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 67);
+            this.button1.Size = new System.Drawing.Size(54, 56);
             this.button1.TabIndex = 22;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(511, 369);
+            this.button2.Location = new System.Drawing.Point(464, 369);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 67);
+            this.button2.Size = new System.Drawing.Size(64, 59);
             this.button2.TabIndex = 23;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -264,7 +267,7 @@ namespace projectADO.NET
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(625, 317);
+            this.label11.Location = new System.Drawing.Point(625, 281);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(204, 20);
             this.label11.TabIndex = 25;
@@ -274,7 +277,7 @@ namespace projectADO.NET
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(622, 356);
+            this.label12.Location = new System.Drawing.Point(625, 317);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(207, 20);
             this.label12.TabIndex = 26;
@@ -284,7 +287,7 @@ namespace projectADO.NET
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(622, 391);
+            this.label13.Location = new System.Drawing.Point(625, 356);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(201, 20);
             this.label13.TabIndex = 27;
@@ -292,24 +295,35 @@ namespace projectADO.NET
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(870, 317);
+            this.textBox11.Location = new System.Drawing.Point(870, 283);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(100, 20);
             this.textBox11.TabIndex = 28;
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(870, 356);
+            this.textBox12.Location = new System.Drawing.Point(870, 319);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(100, 20);
             this.textBox12.TabIndex = 29;
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(870, 391);
+            this.textBox13.Location = new System.Drawing.Point(870, 358);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(100, 20);
             this.textBox13.TabIndex = 30;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(881, 393);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 54);
+            this.button3.TabIndex = 31;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // hastalar
             // 
@@ -317,6 +331,7 @@ namespace projectADO.NET
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1011, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox11);
@@ -385,5 +400,6 @@ namespace projectADO.NET
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Button button3;
     }
 }

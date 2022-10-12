@@ -199,7 +199,7 @@ namespace projectADO.NET
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.Location = new System.Drawing.Point(626, 331);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(152, 16);
+            this.label8.Size = new System.Drawing.Size(151, 16);
             this.label8.TabIndex = 15;
             this.label8.Text = "Aranacak Doktor No:";
             // 
@@ -246,6 +246,7 @@ namespace projectADO.NET
             this.button1.Size = new System.Drawing.Size(91, 64);
             this.button1.TabIndex = 21;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -256,6 +257,7 @@ namespace projectADO.NET
             this.button2.Size = new System.Drawing.Size(91, 64);
             this.button2.TabIndex = 22;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dateTimePicker1
             // 
@@ -270,7 +272,7 @@ namespace projectADO.NET
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label11.Location = new System.Drawing.Point(626, 373);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(204, 16);
+            this.label11.Size = new System.Drawing.Size(203, 16);
             this.label11.TabIndex = 24;
             this.label11.Text = "Aranacak Doktor Ad Soyad :";
             // 
@@ -287,7 +289,7 @@ namespace projectADO.NET
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label12.Location = new System.Drawing.Point(626, 416);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(152, 16);
+            this.label12.Size = new System.Drawing.Size(151, 16);
             this.label12.TabIndex = 26;
             this.label12.Text = "Aranacak Doktor TC:";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -308,6 +310,7 @@ namespace projectADO.NET
             this.button3.Size = new System.Drawing.Size(71, 47);
             this.button3.TabIndex = 28;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label13
             // 

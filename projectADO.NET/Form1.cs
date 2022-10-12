@@ -16,5 +16,31 @@ namespace projectADO.NET
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e) //poliklinik buton
+        {
+            poliklinikler go = new poliklinikler();
+            go.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            doktor go = new doktor();
+            go.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            hastalar go = new hastalar();
+            go.Show();
+            this.Hide();
+        }
     }
 }

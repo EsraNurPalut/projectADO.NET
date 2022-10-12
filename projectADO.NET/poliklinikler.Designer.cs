@@ -52,6 +52,7 @@ namespace projectADO.NET
             this.label9 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,6 +175,7 @@ namespace projectADO.NET
             this.button1.Size = new System.Drawing.Size(60, 62);
             this.button1.TabIndex = 15;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -184,6 +186,7 @@ namespace projectADO.NET
             this.button2.Size = new System.Drawing.Size(77, 62);
             this.button2.TabIndex = 16;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label7
             // 
@@ -245,6 +248,18 @@ namespace projectADO.NET
             this.button3.Size = new System.Drawing.Size(75, 60);
             this.button3.TabIndex = 23;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Location = new System.Drawing.Point(274, 461);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 45);
+            this.button4.TabIndex = 24;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // poliklinikler
             // 
@@ -253,6 +268,7 @@ namespace projectADO.NET
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 518);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.label9);
@@ -307,5 +323,6 @@ namespace projectADO.NET
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
