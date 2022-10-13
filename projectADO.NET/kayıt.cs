@@ -35,26 +35,27 @@ namespace projectADO.NET
             cmd.CommandText = "klogin";
             cmd.Parameters.AddWithValue("Kullanıcıadı", textBox1.Text);
             cmd.Parameters.AddWithValue("Sifre", textBox2.Text);
-            cmd.ExecuteReader();
-            //SqlDataReader dr;
-            //dr = cmd.ExecuteReader();
-            //if(dr.Read())
-            //{
-            //    MessageBox.Show("kullanıcı giriş başarılı");
-            //    Form1 go = new Form1();
-            //    go.Show();
-            //    this.Hide();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("giriş hatalı");
-            //    textBox1.Clear();
-            //    textBox2.Clear();
-            //}
+            //cmd.ExecuteReader();
+
+            SqlDataReader dr;
+            dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                MessageBox.Show("kullanıcı giriş başarılı");
+                Form1 go = new Form1();
+                go.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("giriş hatalı");
+                textBox1.Clear();
+                textBox2.Clear();
+            }
             con.Close();
-            Form1 go = new Form1();
-            go.Show();
-            this.Hide();
+            //Form1 go = new Form1();
+            //go.Show();
+            //this.Hide();
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)

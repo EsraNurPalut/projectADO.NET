@@ -97,5 +97,17 @@ namespace projectADO.NET
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            listele1();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form1 go = new Form1();
+            go.Show();
+            this.Hide();
+        }
     }
 }

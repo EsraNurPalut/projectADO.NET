@@ -58,21 +58,21 @@ namespace projectADO.NET
             dataGridView1.DataSource = dt;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e) //hasta güncelle
         {
             con.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "hyenile";
+            cmd.CommandText = "hgüncelle";
             cmd.Parameters.AddWithValue("HastaNo", textBox1.Text);
-            cmd.Parameters.AddWithValue("HastaAdı", textBox2.Text);
+            cmd.Parameters.AddWithValue("HastaAdıSoyadı", textBox2.Text);
             cmd.Parameters.AddWithValue("HastaTC", textBox3.Text);
             cmd.Parameters.AddWithValue("DogumTarihi", textBox4.Text);
             cmd.Parameters.AddWithValue("Boy", textBox5.Text);
             cmd.Parameters.AddWithValue("Yas", textBox6.Text);
-            cmd.Parameters.AddWithValue("Recete", textBox7.Text);
-            cmd.Parameters.AddWithValue("RaporDurum", textBox8.Text);
+            cmd.Parameters.AddWithValue("Reçete", textBox7.Text);
+            cmd.Parameters.AddWithValue("RaporDurumu", textBox8.Text);
             cmd.Parameters.AddWithValue("RandevuTarihi", textBox9.Text);
             cmd.Parameters.AddWithValue("DoktorNo", textBox10.Text);
             cmd.ExecuteNonQuery();
@@ -111,6 +111,18 @@ namespace projectADO.NET
             textBox8.Text = dataGridView1.Rows[sec].Cells[7].Value.ToString();
             textBox9.Text = dataGridView1.Rows[sec].Cells[8].Value.ToString();
             textBox10.Text = dataGridView1.Rows[sec].Cells[9].Value.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e) //hastalistelebutonu
+        {
+            listele();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form1 go = new Form1();
+            go.Show();
+            this.Hide();
         }
     }
 }

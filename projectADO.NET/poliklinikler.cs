@@ -114,5 +114,18 @@ namespace projectADO.NET
             getir();
         
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            getir();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form1 go =new Form1();
+            go.Show();
+            this.Hide();
+           
+        }
     }
 }
