@@ -52,6 +52,12 @@
     <Compile Include="doktor.Designer.cs">
       <DependentUpon>doktor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Draporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Draporlama.Designer.cs">
+      <DependentUpon>Draporlama.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,8 +90,17 @@
     <Compile Include="rapor.Designer.cs">
       <DependentUpon>rapor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hraporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hraporlama.Designer.cs">
+      <DependentUpon>Hraporlama.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="doktor.resx">
       <DependentUpon>doktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Draporlama.resx">
+      <DependentUpon>Draporlama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -110,6 +125,9 @@
     </Compile>
     <EmbeddedResource Include="rapor.resx">
       <DependentUpon>rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hraporlama.resx">
+      <DependentUpon>Hraporlama.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

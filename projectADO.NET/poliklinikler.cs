@@ -72,7 +72,7 @@ namespace projectADO.NET
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "pyenile";
+            cmd.CommandText = "pgüncelle";
             cmd.Parameters.AddWithValue("PoliklinikNo", textBox1.Text);
             cmd.Parameters.AddWithValue("PoliklinikAd", textBox2.Text);
             cmd.Parameters.AddWithValue("PoliklinikUzmanSayısı", textBox3.Text);

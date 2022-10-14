@@ -16,7 +16,7 @@ namespace projectADO.NET
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new kayıt());
+            Application.Run(new Hraporlama());
         }
     }
 }
