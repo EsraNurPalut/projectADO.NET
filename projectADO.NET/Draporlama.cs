@@ -34,6 +34,17 @@ namespace projectADO.NET
             cmd.Parameters.Clear();
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "tcgöresiralama ";
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            cmd.Parameters.Clear();
+        }
     }
 }
