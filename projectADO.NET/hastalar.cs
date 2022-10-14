@@ -39,7 +39,7 @@ namespace projectADO.NET
             cmd.Parameters.AddWithValue("Reçete", textBox7.Text);
             cmd.Parameters.AddWithValue("RaporDurumu", textBox8.Text);
             cmd.Parameters.AddWithValue("RandevuTarihi", textBox9.Text);
-            cmd.Parameters.AddWithValue("DoktorNo", textBox10.Text);         
+            cmd.Parameters.AddWithValue("DoktorNo", comboBox1.Text);         
             cmd.ExecuteNonQuery();
             con.Close();
             listele();
@@ -74,7 +74,7 @@ namespace projectADO.NET
             cmd.Parameters.AddWithValue("Reçete", textBox7.Text);
             cmd.Parameters.AddWithValue("RaporDurumu", textBox8.Text);
             cmd.Parameters.AddWithValue("RandevuTarihi", textBox9.Text);
-            cmd.Parameters.AddWithValue("DoktorNo", textBox10.Text);
+            cmd.Parameters.AddWithValue("DoktorNo", comboBox1.Text);
             cmd.ExecuteNonQuery();
             con.Close();
             listele();
@@ -110,7 +110,7 @@ namespace projectADO.NET
             textBox7.Text = dataGridView1.Rows[sec].Cells[6].Value.ToString();
             textBox8.Text = dataGridView1.Rows[sec].Cells[7].Value.ToString();
             textBox9.Text = dataGridView1.Rows[sec].Cells[8].Value.ToString();
-            textBox10.Text = dataGridView1.Rows[sec].Cells[9].Value.ToString();
+            comboBox1.Text = dataGridView1.Rows[sec].Cells[9].Value.ToString();
         }
 
         private void button4_Click(object sender, EventArgs e) //hastalistelebutonu
@@ -123,6 +123,27 @@ namespace projectADO.NET
             Form1 go = new Form1();
             go.Show();
             this.Hide();
+        }
+
+        private void hastalar_Load(object sender, EventArgs e) //doktorların kendiliğinden gelmesidir.
+        {
+            //dataGridView1 = false;
+           
+            SqlCommand komut =new SqlCommand();
+            komut.Connection = con;
+
+            komut.CommandType = CommandType.StoredProcedure;
+            komut.CommandText = "DoktorNo";
+
+            SqlDataReader dr;
+            con.Open();
+            dr =komut.ExecuteReader();
+
+            while (dr.Read())
+            {
+                comboBox1.Items.Add(dr["DoktorNo"]);
+            }
+            con.Close();    
         }
     }
 }

@@ -49,7 +49,6 @@ namespace projectADO.NET
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -63,6 +62,7 @@ namespace projectADO.NET
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -229,13 +229,6 @@ namespace projectADO.NET
             this.textBox9.Size = new System.Drawing.Size(100, 20);
             this.textBox9.TabIndex = 20;
             // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(216, 393);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 21;
-            // 
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
@@ -359,12 +352,21 @@ namespace projectADO.NET
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(216, 393);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 35;
+            // 
             // hastalar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1011, 450);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -378,7 +380,6 @@ namespace projectADO.NET
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -400,6 +401,7 @@ namespace projectADO.NET
             this.Controls.Add(this.label1);
             this.Name = "hastalar";
             this.Text = "hastalar";
+            this.Load += new System.EventHandler(this.hastalar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -427,7 +429,6 @@ namespace projectADO.NET
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -441,5 +442,6 @@ namespace projectADO.NET
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
