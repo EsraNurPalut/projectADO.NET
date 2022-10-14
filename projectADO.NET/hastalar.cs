@@ -133,7 +133,7 @@ namespace projectADO.NET
             komut.Connection = con;
 
             komut.CommandType = CommandType.StoredProcedure;
-            komut.CommandText = "DoktorNo";
+            komut.CommandText = "doktorno";
 
             SqlDataReader dr;
             con.Open();
