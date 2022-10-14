@@ -82,6 +82,12 @@
     <Compile Include="poliklinikler.Designer.cs">
       <DependentUpon>poliklinikler.cs</DependentUpon>
     </Compile>
+    <Compile Include="Praporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Praporlama.Designer.cs">
+      <DependentUpon>Praporlama.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="rapor.cs">
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="poliklinikler.resx">
       <DependentUpon>poliklinikler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Praporlama.resx">
+      <DependentUpon>Praporlama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
