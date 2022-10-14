@@ -127,7 +127,7 @@ namespace projectADO.NET
 
         private void hastalar_Load(object sender, EventArgs e) //doktorların kendiliğinden gelmesidir.
         {
-            //dataGridView1 = false;
+         
            
             SqlCommand komut =new SqlCommand();
             komut.Connection = con;
