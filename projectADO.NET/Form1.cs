@@ -42,5 +42,26 @@ namespace projectADO.NET
             go.Show();
             this.Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Hraporlama go = new Hraporlama();
+            go.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Draporlama go = new Draporlama();
+            go.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Praporlama go = new Praporlama();
+            go.Show();
+            this.Hide();
+        }
     }
 }

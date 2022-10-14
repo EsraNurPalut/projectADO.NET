@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace projectADO.NET
 {
-    public partial class Praporlama : Form
+    public partial class Praporlama: Form
     {
         public Praporlama()
         {
